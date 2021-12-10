@@ -14,7 +14,7 @@ namespace Section_03
         {
             //Function to calculate the minimum, maximum, sum and average of all numbers in an array.
 
-            double min = 0, max = 0, sum = 0, avg = 0;
+            double min = int.MaxValue, max = int.MinValue, sum = 0, avg = 0;
 
             Console.WriteLine("Hello, this is a function which calculates the minimum, maximum, sum and average of all numbers in an array.\n ");
             Console.WriteLine("How many numbers would you like to enter?\n");
@@ -27,8 +27,7 @@ namespace Section_03
                 numbers[i] = Convert.ToDouble(Console.ReadLine());
 
                 sum += numbers[i];
-                min = numbers[i];
-
+              
                 if (numbers[i] > max)
                 {
                     max = numbers[i];
